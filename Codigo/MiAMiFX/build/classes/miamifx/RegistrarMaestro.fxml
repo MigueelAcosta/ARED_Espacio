@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="307.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miamifx.controllers.RegistrarMaestroController">
+   <children>
+      <Label layoutX="46.0" layoutY="36.0" text="Nombre" />
+      <Label layoutX="266.0" layoutY="36.0" text="Apellidos" />
+      <Label layoutX="41.0" layoutY="108.0" text="Correo Electronico" />
+      <Label layoutX="267.0" layoutY="108.0" text="Telefono" />
+      <TextField fx:id="campoNombre" layoutX="46.0" layoutY="61.0" />
+      <TextField fx:id="campoApellido" layoutX="266.0" layoutY="61.0" />
+      <TextField fx:id="campoCorreo" layoutX="46.0" layoutY="139.0" />
+      <TextField fx:id="campoTelefono" layoutX="266.0" layoutY="139.0" />
+      <Button id="btnGuardar" fx:id="btnGuardar" layoutX="315.0" layoutY="231.0" mnemonicParsing="false" onAction="#guardarRegistro" text="Guardar" />
+      <Button id="btnCancelar" fx:id="btnCancelar" cancelButton="true" layoutX="415.0" layoutY="231.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="17.0" prefWidth="69.0" text="Cancelar" />
+   </children>
+</AnchorPane>

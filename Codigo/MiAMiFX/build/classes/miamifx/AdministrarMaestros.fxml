@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miamifx.controllers.AdministrarMaestrosController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="557.0" prefWidth="731.0" styleClass="mainFxmlClass">
+         <children>
+            <TableView fx:id="tablaMaestros" layoutX="14.0" layoutY="98.0" prefHeight="400.0" prefWidth="685.0">
+               <columns>
+                  <TableColumn fx:id="columnaNombre" prefWidth="243.0" text="Nombre" />
+                  <TableColumn fx:id="columnaApellidos" minWidth="0.0" prefWidth="243.0" text="Apellidos" />
+                  <TableColumn fx:id="columnaCorreo" prefWidth="206.0" text="Correo" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnRegistrar" layoutX="49.0" layoutY="523.0" mnemonicParsing="false" onAction="#registrarMaestro" text="Registrar" />
+            <Button fx:id="btnDetalles" disable="true" layoutX="279.0" layoutY="523.0" mnemonicParsing="false" onAction="#verDetalles" text="Ver detalles" />
+            <Button fx:id="btnEliminar" disable="true" layoutX="487.0" layoutY="523.0" mnemonicParsing="false" onAction="#eliminarRegistro" text="Eliminar" />
+            <TextField fx:id="campoBusqueda" layoutX="49.0" layoutY="45.0" onAction="#buscarMaestro" prefHeight="25.0" prefWidth="300.0" />
+            <Button fx:id="btnBuscar" layoutX="465.0" layoutY="45.0" mnemonicParsing="false" onAction="#buscarMaestro" text="Buscar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
